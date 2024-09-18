@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="./favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsividade.css">
+
+  <title>Pokédex</title>
+</head>
+<body>
+
+  <main>
+    <div class="header">
+      <img src="./favicon.ico" alt="favicon" class="header__icon header__icon--left">
+      <h1 class="header__title">POKEDEX</h1>
+      <img src="./favicon.ico" alt="favicon" class="header__icon header__icon--right">
+    </div>
+  
+    <img src="#" alt="pokemon" class="pokemon__image">
+
+    <h1 class="pokemon__data">
+      <span class="pokemon__number"></span> -
+      <span class="pokemon__name"></span>
+    </h1>
+
+    <form class="form">
+      <input
+        type="search"
+        class="input__search"
+        placeholder="Nome ou ID"
+        required
+      />
+    </form>
+
+    <div class="buttons">
+      <button class="button btn-prev">Prev &lt;</button>
+      <button class="button btn-next">Next &gt;</button>
+      <button class="button btn-details">Detalhes</button>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Detalhes do Pokémon</h2>
+      <p class="modal__name"></p>
+      <p class="modal__id"></p>
+      <p class="modal__type"></p>
+      <p class="modal__weight"></p>
+      <p class="modal__height"></p>
+      <img src="" alt="pokemon" class="modal__image">
+    </div>
+  </div>
+
+</body>
+<script src="script.js"></script>
+</html>
